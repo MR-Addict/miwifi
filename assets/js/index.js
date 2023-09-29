@@ -28,3 +28,8 @@ function handleSubmit(event) {
   const sn = formData.get("sn");
   document.querySelector("input:read-only").value = getPassword(sn);
 }
+
+// 监听输入事件
+function handleChange(event) {
+  if (!event.value) document.querySelector("input:read-only").value = "";
+}
