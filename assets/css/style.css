@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  gap: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.75rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: black;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 7px;
+  background: #91919140;
+  box-shadow: 0 0 5px 5px #91919180;
+}
+
+form:focus-within {
+  transition: 300ms;
+  outline: solid 1px #b37818;
+  box-shadow: 0 0 5px 5px #b3781880;
+}
+
+input {
+  border: none;
+  outline: none;
+  color: gray;
+  text-align: center;
+  background: transparent;
+}
+
+input[name="sn"] {
+  width: 100%;
+  padding-block: 1rem;
+  border-right: solid 1px #6b6b6b;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: gray;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  padding-inline: 1rem;
+  background: transparent;
+}
+
+button:hover {
+  color: #b37818;
+}

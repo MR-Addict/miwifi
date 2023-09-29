@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SSH密码计算器</title>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/crypto-js.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="小米路由器SSH密码计算器" />
+    <link href="/assets/images/favicon.png" rel="icon" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <input readonly type="text" placeholder="计算得到的密码" />
+    <form onsubmit="handleSubmit(event)">
+      <input required type="text" name="sn" placeholder="输入SN码" />
+      <button type="submit">计算</button>
+    </form>
+  </body>
+</html>
